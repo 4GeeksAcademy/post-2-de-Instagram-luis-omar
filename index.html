@@ -13,57 +13,84 @@
 <body>
 
     <!-- BARRA DE NAVEGACION -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary align-items-center">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-            <i class="fa-brands fa-square-instagram" style="font-size: 1.5rem;"></i>
-            Instagram
-            </a>
-        
-            <div class="dropdown">
-                    
+            <div class="d-flex align-items-center">
+                <a class="navbar-brand m-0"> 
+                    <i class="fa-brands fa-instagram"></i>                    
+                </a>
+            </div>
+                
+            <div class="d-flex justify-content-center align-items-center me-auto ms-0">
+                <p class="m-0" >Instagram</p>
+            </div>   
+            
+            <div class="d-flex justify-content-end align-items-center">                    
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Create a new post
                 </button>
-                    
-                    <!-- CONTENEDOR MODAL HEADER-->                
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle ms-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>                 
+                
+                <!-- CONTENEDOR MODAL HEADER-->                
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                             
-                            <!--MODAL HEADER-->
+                            <!-- MODAL -->
                             <div class="modal-header">
                                 
                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                                 <!--BOTON X DE CIERRE DEL MODAL-->
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 
-                                    </div>            
-                                        <div class="modal-body">
-                                            HOLA SOY LUIS
-                                        </div>
-
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                        </div>                                    
+                                </div>            
+                                    <div class="modal-body">
+                                         HOLA SOY LUIS
                                     </div>
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div> 
+
+                                </div>
+                                
                             </div>
+
                         </div>
+
                     </div>
+
                 </div>
-            </div>   
+                
+            </div> 
+
         </div>
+        
     </nav>
 
     
     
-    <!-- SCRIPT PARA PONER AUTOFOCUS EN LA VENTANA MODAL
+    <!-- EJEMPLO DE CODIGO PARA HACER AUTOFOCUS EN UNA VENTANA MODAL
        
-        OPTION 1: const myModal = new bootstrap.Modal(document.getElementById('myModal'), options)
-       
-        OPTION 2: const myModalAlternative = new bootstrap.Modal('#myModal', options) 
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+        }) 
     -->
     
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
