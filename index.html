@@ -14,7 +14,7 @@
     
     <!-- BARRA DE NAVEGACION --> 
     <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid" style="background-color: blueviolet;">
+        <div class="container-fluid">
             <div class="row justify-content-center align-items-center " style="background-color: transparent;">
                 <a class="navbar-brand" href="#">
                     <i class="fa-brands fa-instagram"></i>
@@ -39,7 +39,8 @@
                         <div class="modal-body">
                         Caption
                         </div>
-                        <!--input del modal-->
+
+                        <!-- input del modal -->
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Add the caption of you here" aria-label="Recipient’s username" aria-describedby="basic-addon2">
                             <span class="input-group-text" id="basic-addon2"></span>
@@ -54,7 +55,7 @@
             </div>
 
 
-            <!--Dropdown o Menu desplegable-->
+            <!-- Dropdown o Menu desplegable de la navbar -->
             <div class="btn-group">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa-solid fa-gear"></i>
@@ -67,11 +68,57 @@
                     <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
                 </ul>
             </div>
-
-
         </div>
-
     </nav>
+
+    <!--navegador con 2 pestañas para vizualizar la galería de fotos-->
+    <nav>
+    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+        <button class="nav-link active" 
+                id="nav-home-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#nav-home" 
+                type="button" role="tab" 
+                aria-controls="nav-home" 
+                aria-selected="true">
+                <i class="fa-solid fa-border-all fa-sm" style="color: #080808;"></i>
+        </button>
+        <button class="nav-link" 
+                id="nav-profile-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#nav-profile" 
+                type="button" role="tab" 
+                aria-controls="nav-profile" 
+                aria-selected="false">
+                <i class="fa-solid fa-square fa-sm" style="color: #050505;"></i>
+        </button>
+    </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">galeria en grid
+
+        <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+        </ul>
+    </div>
+
+
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">galeria en columna
+
+        <ul class="list-group">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+         </ul>
+
+    </div>
+</div>
 
 
 
