@@ -1,149 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pos 2</title>
-    <!-- CDN BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/06f4c2685f.js" crossorigin="anonymous"></script>
-    <!-- HOJA DE ESTILO CSS -->
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pos 2</title>
+
+  <!-- CDN BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/06f4c2685f.js" crossorigin="anonymous"></script>
+
+  <!-- HOJA DE ESTILO CSS -->
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-    <!-- BARRA DE NAVEGACION --> 
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center " style="background-color: transparent;">
-                <a class="navbar-brand" href="#">
-                    <i class="fa-brands fa-instagram"></i>
-                    Instagram
-                </a>
+  <!-- BARRA DE NAVEGACION -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center" style="background-color: transparent;">
+        <a class="navbar-brand" href="#">
+          <i class="fa-brands fa-instagram"></i>
+          Instagram
+        </a>
+      </div>
+
+      <!-- Botón para abrir el modal -->
+      <button type="button" class="btn btn-success ms-auto me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create a new Post</button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new Post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
 
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-success ms-auto me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                Create a new Post
-            </button>
+            <div class="modal-body">Caption</div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new Post</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                        Caption
-                        </div>
-
-                        <!-- input del modal -->
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Add the caption of you here" aria-label="Recipient’s username" aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2"></span>
-                        </div>
-
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
-                        </div>
-                    </div>
-                </div>
+            <!-- Input del modal -->
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Add the caption of you here" aria-label="Recipient’s username" aria-describedby="basic-addon2">
+              <span class="input-group-text" id="basic-addon2"></span>
             </div>
 
-
-            <!-- Dropdown o Menu desplegable de la navbar -->
-            <div class="btn-group">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-gear"></i>
-                </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
-                </ul>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
             </div>
+
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <!--navegador con 2 pestañas para vizualizar la galería de fotos-->
-    <nav>
+      <!-- Dropdown o menú desplegable -->
+      <div class="btn-group">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#" style="color: red;">Log out</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navegador con 2 pestañas -->
+  <nav>
     <div class="nav nav-tabs mb-0 justify-content-center" id="nav-tab" role="tablist">
-        <button class="nav-link active" 
-                id="nav-home-tab" 
-                data-bs-toggle="tab" 
-                data-bs-target="#nav-home" 
-                type="button" role="tab" 
-                aria-controls="nav-home" 
-                aria-selected="true">
-                <i class="fa-solid fa-border-all fa-sm" style="color: #080808;"></i>
-        </button>
-        <button class="nav-link" 
-                id="nav-profile-tab" 
-                data-bs-toggle="tab" 
-                data-bs-target="#nav-profile" 
-                type="button" role="tab" 
-                aria-controls="nav-profile" 
-                aria-selected="false">
-                <i class="fa-solid fa-square fa-sm" style="color: #050505;"></i>
-        </button>
+      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+        <i class="fa-solid fa-border-all fa-sm" style="color: #080808;"></i>
+      </button>
+
+      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+        <i class="fa-solid fa-square fa-sm" style="color: #050505;"></i>
+      </button>
     </div>
-    </nav>
+  </nav>
 
-
-    <div class="tab-content mt-0 pt-0">
-            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">   
-                
-                <div class="row row-cols-1 row-cols-2 row-cols-md-3 g-2">
-                    <div class="col w-100" style="object-fit: cover;">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                    </div>
-                    <div class="col w-100" style="object-fit: cover;">
-                        <img src="https://fastly.picsum.photos/id/23/200/200.jpg?hmac=IMR2f77CBqpauCb5W6kGzhwbKatX_r9IvgWj6n7FQ7c" class="img-fluid rounded">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                    </div>
-                    <div class="col w-100" style="object-fit: cover;">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
-                    </div>
-                </div>
-            </div>
-
-        <div class="tab-pane fade mb-0 pt-0" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-            <div class="row row-cols-1 g-2">
-                <div class="col">
-                    <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded w-75" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="col">
-                    <img src="https://fastly.picsum.photos/id/23/200/200.jpg?hmac=IMR2f77CBqpauCb5W6kGzhwbKatX_r9IvgWj6n7FQ7c" class="img-fluid rounded w-75" style="height: 200px; object-fit: cover;">
-                </div>
-                <div class="col">
-                    <img src="https://fastly.picsum.photos/id/127/300/300.jpg?hmac=HZUd4txpHTQ03Wnmjyu9jVlqCd0RgknOTp2S0RIoE-k" class="img-fluid rounded w-75" style="height: 200px; object-fit: cover;">
-                </div>
-            </div>
+  <!-- Pestaña Home -->
+  <div class="tab-content">    
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+      <div class="container-fluid">
+        <div class="row m-0">
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
+          <div class="col col-md-4 col-lg-3 m-0 p-0">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid w-100 h-100 p-1">
+          </div>
         </div>
+      </div>
     </div>
 
-</div>
-</div>
+    <!-- Pestaña Profile -->
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+      <div class="container">
+        <div class="row">
+          <div class="col col-md-4 col-lg-12 d-flex justify-content-center">
+            <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded" style="object-fit: cover; width:50%;">
+          </div>
+          <div class="col col-md-4 col-lg-12 d-flex justify-content-center">
+            <img src="https://fastly.picsum.photos/id/23/200/200.jpg?hmac=IMR2f77CBqpauCb5W6kGzhwbKatX_r9IvgWj6n7FQ7c" class="img-fluid rounded" style="object-fit: cover; width:50%;">
+          </div>
+          <div class="col col-md-4 col-lg-12 d-flex justify-content-center">
+            <img src="https://fastly.picsum.photos/id/127/300/300.jpg?hmac=HZUd4txpHTQ03Wnmjyu9jVlqCd0RgknOTp2S0RIoE-k" class="img-fluid rounded" style="object-fit: cover; width:50%;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<!--<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">-->
-
-
-
-    
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script> 
-
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
-
 </html>
