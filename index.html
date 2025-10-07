@@ -73,7 +73,7 @@
 
     <!--navegador con 2 pestañas para vizualizar la galería de fotos-->
     <nav>
-    <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+    <div class="nav nav-tabs mb-0 justify-content-center" id="nav-tab" role="tablist">
         <button class="nav-link active" 
                 id="nav-home-tab" 
                 data-bs-toggle="tab" 
@@ -94,36 +94,49 @@
         </button>
     </div>
     </nav>
-    <div class="tab-content" id="nav-tabContent">
-    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">   
-        galeria en grid
 
-        <div class="fotos-grid"></div>
-            <ul class="list-group">
-                <li class="list-group-item"><img src="https://fastly.picsum.photos/id/890/300/300.jpg?hmac=fPCig5tKiLaPCAgDuWqNH_5uDYZUZFUH8zbZ-rSjt70"></li>A/li>
-                <li class="list-group-item"><img src="https://fastly.picsum.photos/id/242/300/300.jpg?hmac=o4XyRlR53cSyXOhNnSoYw3pNc6AiUawAVed124gdQZs"> </li>
-                <li class="list-group-item"><img src="https://fastly.picsum.photos/id/534/300/300.jpg?hmac=PGUWTUeM8cg-ZwT7RBRcjzeUk2sLPc5bpmY22mIn32s"></li>
-                <li class="list-group-item"><img src="https://fastly.picsum.photos/id/175/300/300.jpg?hmac=vC3FhlD3cqzNijD5Bt9mBvZCzA6MSj3QsQNrIBv1uSo"></li>
-                <li class="list-group-item"><img src="https://fastly.picsum.photos/id/127/300/300.jpg?hmac=HZUd4txpHTQ03Wnmjyu9jVlqCd0RgknOTp2S0RIoE-k"></li>
-                <li class="list-group-item"><img src="https://fastly.picsum.photos/id/787/300/300.jpg?hmac=INjE1ifrj7msPa8lJyw1K_wgWU1l8hfhQnX_uW6OTqE"></li>
-            </ul>
+
+    <div class="tab-content mt-0 pt-0">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">   
+                
+                <div class="row row-cols-1 row-cols-2 row-cols-md-3 g-2">
+                    <div class="col w-100" style="object-fit: cover;">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                    </div>
+                    <div class="col w-100" style="object-fit: cover;">
+                        <img src="https://fastly.picsum.photos/id/23/200/200.jpg?hmac=IMR2f77CBqpauCb5W6kGzhwbKatX_r9IvgWj6n7FQ7c" class="img-fluid rounded">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                    </div>
+                    <div class="col w-100" style="object-fit: cover;">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                        <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+
+        <div class="tab-pane fade mb-0 pt-0" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="row row-cols-1 g-2">
+                <div class="col">
+                    <img src="https://fastly.picsum.photos/id/163/200/200.jpg?hmac=mEG0MVDQnbY2PIFVIxZKgINnXrapgb5G5S1QMtMTt98" class="img-fluid rounded w-75" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="col">
+                    <img src="https://fastly.picsum.photos/id/23/200/200.jpg?hmac=IMR2f77CBqpauCb5W6kGzhwbKatX_r9IvgWj6n7FQ7c" class="img-fluid rounded w-75" style="height: 200px; object-fit: cover;">
+                </div>
+                <div class="col">
+                    <img src="https://fastly.picsum.photos/id/127/300/300.jpg?hmac=HZUd4txpHTQ03Wnmjyu9jVlqCd0RgknOTp2S0RIoE-k" class="img-fluid rounded w-75" style="height: 200px; object-fit: cover;">
+                </div>
+            </div>
         </div>
     </div>
 
-
-    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-        galeria en columna
-        <ul class="list-group">
-            <li class="list-group-item"><img src="https://fastly.picsum.photos/id/890/300/300.jpg?hmac=fPCig5tKiLaPCAgDuWqNH_5uDYZUZFUH8zbZ-rSjt70"></li>A/li>
-            <li class="list-group-item"><img src="https://fastly.picsum.photos/id/242/300/300.jpg?hmac=o4XyRlR53cSyXOhNnSoYw3pNc6AiUawAVed124gdQZs"> </li>
-            <li class="list-group-item"><img src="https://fastly.picsum.photos/id/534/300/300.jpg?hmac=PGUWTUeM8cg-ZwT7RBRcjzeUk2sLPc5bpmY22mIn32s"></li>
-            <li class="list-group-item"><img src="https://fastly.picsum.photos/id/175/300/300.jpg?hmac=vC3FhlD3cqzNijD5Bt9mBvZCzA6MSj3QsQNrIBv1uSo"></li>
-            <li class="list-group-item"><img src="https://fastly.picsum.photos/id/127/300/300.jpg?hmac=HZUd4txpHTQ03Wnmjyu9jVlqCd0RgknOTp2S0RIoE-k"></li>
-            <li class="list-group-item"><img src="https://fastly.picsum.photos/id/787/300/300.jpg?hmac=INjE1ifrj7msPa8lJyw1K_wgWU1l8hfhQnX_uW6OTqE"></li>
-        </ul>
-
-    </div>
 </div>
+</div>
+
+<!--<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">-->
 
 
 
